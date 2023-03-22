@@ -1,0 +1,21 @@
+table {
+	border: 1px solid seagreen;
+}
+td:hover {
+	background-color: salmon;
+	color: brown;
+	cursor: context-menu;
+}
+th {
+	font-size: 18px;
+}
+tr, th {
+	background-color: darkgoldenrod;
+	color: beige;
+	padding: 5px;
+}
+tr, td {
+	background-color: crimson;
+	color: azure;
+	padding: 7px;
+}

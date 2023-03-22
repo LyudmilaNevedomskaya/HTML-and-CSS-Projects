@@ -1,0 +1,27 @@
+h2 {
+	font-size: 28px;
+	text-shadow: 2px 2px 5px red;
+	text-align: right;
+}
+p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color:snow;
+	background: black;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding: 15px;
+}
+.entities {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+	font-size: 22px;
+	padding: 20px;
+	font-weight: normal;
+	background-color: aquamarine;
+	color: grey;
+}
+.color {
+	background-color: cornflowerblue;
+	color: azure;
+}
