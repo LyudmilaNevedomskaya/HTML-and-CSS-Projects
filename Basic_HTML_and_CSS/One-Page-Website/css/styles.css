@@ -1,0 +1,141 @@
+* {box-sizing: border-box}
+
+body {
+  margin: 0;
+  background-color: #FFEAEA;
+  background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+/* HEADER */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #9A208C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  color: #FFEAEA;
+  padding: 25px 40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+nav a:hover {
+  background-color: #FC2947;
+  color: aliceblue;
+}
+/* ABOUT US SECTION */
+#about {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 150px;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 96px;
+  color: #C04A82;
+  color: #E11299;
+}
+#about h2, #about h3 {
+  color: #D864A9;
+  font-size: 28px;
+  margin-top: 0;
+}
+#about p {
+  width: 70%;
+  margin: auto;
+  margin-top: 65px;
+  font-size: 22px;
+  color: #4D4D4D;
+}
+#about img {
+  width: 450px;
+  border: 2px solid white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+/* BANNER IMAGE */
+.banner {
+  margin-top: 65px;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: baseline;
+}
+.banner img {
+  width: 100%;
+}
+/* PRODUCTS SECTION */
+#products, #contact {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+h2 {
+  font-size: 38px;
+  color: #D864A9;
+}
+.margin {
+  margin-top: 60px;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.img-container img {
+  width: 350px;
+  height: 240px;
+  border: 2px solid white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+/* CONTACT SECTION */
+form {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  text-align: left;
+  color: #9A208C;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+form .btn {
+  background-color: #E11299;
+  font-size: 18px;
+  color: #FFEAEA;
+}
+form .btn:hover {
+  background-color: #9A208C;
+  color: #F5C6EC;
+  cursor: pointer;
+}
+/* FOOTER */
+footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 65px;
+  padding: 15px;
+  background-color: #F5C6EC;
+}
+footer p {
+  font-size: small;
+  margin: 5px auto;
+  color: #9A208C;
+}
