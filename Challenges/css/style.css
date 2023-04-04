@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #f5ebeb;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-1.png");
+  font-family: "Kanit", sans-serif;
+}
+/* NAVBAR */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+/* END NAVBAR */
+
+/* IMAGE CONTAINER */
+h1 {
+  margin-top: 100px;
+  color: #867070;
+  text-align: center;
+  font-size: 62px;
+}
+.image {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding-top: 7%;
+}
+.background-img {
+  width: 70%;
+  position: absolute;
+  left: 15%;
+  top: 0;
+  z-index: -1;
+  filter: blur(15px);
+}
+.inner-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.quote {
+  position: absolute;
+  top: 95%;
+  right: 18%;
+  color: #f5ebeb;
+  font-size: 24px;
+}
+.description {
+  width: 70%;
+  margin: 150px auto 0;
+  text-align: justify;
+  font-size: 22px;
+}
+.list {
+  width: 75%;
+  margin: auto;
+  font-size: 22px;
+  padding-top: 20px;
+}
+/* END IMAGE CONTAINER */
+
+/* FADE IMAGE */
+.fade-container {
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.fade-container:hover .image {
+  opacity: 0.3;
+}
+.fade-container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #1a5f7a;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+/* END FADE IMAGE */
+
+/* TABLE */
+.table-container {
+  margin-top: 50px;
+}
+.table-container h2 {
+  text-align: center;
+  font-size: 38px;
+  color: #6d5f5f;
+}
+.table-container table {
+  width: 50%;
+  margin: auto;
+  border: 1px solid #0c3b6a;
+}
+th {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #f5ebeb;
+  background-color: #867070;
+}
+th,
+td {
+  border: 2px solid #0c3b6a;
+  padding: 10px;
+  text-align: center;
+}
+td a {
+  text-decoration: none;
+  color: black;
+}
+.active-cell:hover {
+  background-color: bisque;
+}
+
+/* TWO COLUMN CONTENT */
+.row {
+  margin-top: 50px;
+  background-color: #f5f3f3;
+  display: flex;
+}
+.column {
+  float: left;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.column img {
+  width: 100%;
+  height: 100%;
+}
+.column-quote {
+  padding: 20px 30px;
+  font-size: 22px;
+  color: #8785A2;
+}
+.column-quote:hover {
+  text-transform: uppercase;
+  color: #867070;
+}
+/* END TWO COLUMN CONTENT */
+
+/* VIDEO CONTAINER */
+.video-container {
+  width: 100%;
+  position: relative;
+}
+.video-container video {
+  width: 100%;
+}
+.video-container p {
+  margin: 0;
+  position: absolute;
+  font-size: 36px;
+  color: #ffd966;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* END VIDEO CONTAINER */
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #0c3b6a;
+  color: white;
+  font-weight: bold;
+}
+footer p a {
+  text-decoration: none;
+  color: #f5ebeb;
+}
+
+@media all and (max-width: 768px) {
+  .table-container table {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+  }
+  .video-container p {
+    font-size: 24px;
+  }
+  .table-container table,
+  .description {
+    width: 90%;
+  }
+  .fade-container {
+    width: 100%;
+  }
+  .quote {
+    top: 92%;
+    right: 18%;
+    font-size: 16px;
+  }
+}

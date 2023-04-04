@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS Challenges</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,600;0,700;1,400;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="./images/code.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+    </nav>
+
+    <div id="home" class="container">
+      <h1>Software Developer</h1>
+      <div class="image">
+        <p class="quote">Java is to JavaScript as ham is to hamster.</p>
+        <img src="./images/1.jpg" alt="Background" class="background-img" />
+        <img src="./images/1.jpg" alt="Developer" class="inner-img" />
+      </div>
+      <p id="about" class="description">
+        A Software Developer is a professional who is charged with designing and
+        coding software for businesses and consumers alike. They work closely
+        with clients to determine what they need, then use programming languages
+        like Java or C++ to create programs. They must have critical thinking
+        skills, as well as strong problem-solving abilities.
+      </p>
+      <ul class="list">
+        <li>Producing clean, efficient code based on specifications</li>
+        <li>Testing and deploying programs and systems</li>
+        <li>Fixing and improving existing software</li>
+      </ul>
+    </div>
+
+    <!-- FADE IMAGE -->
+    <div class="fade-container">
+      <img
+        src="./images/3.jpg"
+        alt="Avatar"
+        class="image"
+        style="width: 100%"
+      />
+      <div class="middle">
+        <div class="text">⚪ ⚪ ⚪ Learn Coding... ⚪ ⚪ ⚪</div>
+      </div>
+    </div>
+    <!-- END FADE IMAGE -->
+
+    <!-- TABLE -->
+    <div id="courses" class="table-container">
+      <h2>Learn New Skills Now</h2>
+      <table>
+        <tr>
+          <th>Skills</th>
+          <th>Useful Content</th>
+          <th>Time to learn</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td class="active-cell">
+            <a
+              href="https://www.bing.com/videos/search?q=learn+html&docid=603515949623869604&mid=8689A7FDFFEB1E90A24C8689A7FDFFEB1E90A24C&view=detail&FORM=VIRE"
+              target="_blank"
+              >Learn HTML - Full Tutorial for Beginners</a
+            >
+          </td>
+          <td>4 hrs</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td class="active-cell">
+            <a
+              href="https://www.youtube.com/watch?v=OXGznpKZ_sA"
+              target="_blank"
+              >CSS Tutorial - Full Course for Beginners</a
+            >
+          </td>
+          <td>11hrs</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td class="active-cell">
+            <a
+              href="https://www.bing.com/videos/search?q=JavaScript+Tutorial&&view=detail&mid=87840117FA6A74634C9687840117FA6A74634C96&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DJavaScript%2BTutorial%26FORM%3DRESTAB"
+              target="_blank"
+              >JS Programming - Full Course</a
+            >
+          </td>
+          <td>8hrs</td>
+        </tr>
+        <tr>
+          <td>React</td>
+          <td class="active-cell">
+            <a
+              href="https://www.bing.com/videos/search?q=react+freecodecamp&&view=detail&mid=AB961E8427AB2B22A8A8AB961E8427AB2B22A8A8&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dreact%2520freecodecamp%26qs%3DMM%26form%3DQBVR%26%3D%2525eManage%2520Your%2520Search%2520History%2525E%26sp%3D1%26lq%3D0%26pq%3Dreact%2520fre%26sc%3D10-9%26cvid%3DCA8BCAB104044CBA860709C42DCF17BB"
+              target="_blank"
+              >Learn React 18 with Redux</a
+            >
+          </td>
+          <td>14hrs</td>
+        </tr>
+      </table>
+    </div>
+    <!-- END TABLE -->
+
+    <!-- TWO COLUMN CONTENT -->
+    <div class="row">
+      <div class="column">
+        <img src="./images/2.jpg" alt="Do what you love" />
+      </div>
+      <div class="column">
+        <p class="column-quote">
+          <q
+            cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921"
+          >
+            Everybody should learn to program a computer because it teaches you
+            how to think.</q
+          >
+          - Steve Jobs
+        </p>
+      </div>
+    </div>
+    <!-- END TWO COLUMN CONTENT -->
+
+    <!-- VIDEO  -->
+    <div class="video-container">
+      <p>If at first you don't succeed, call it version 1.0</p>
+      <video autoplay muted loop>
+        <source src="./video/video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- END VIDEO -->
+
+    <footer>
+      <p>&copy;2023 | Mila Corpotation&reg;</p>
+      <p><a href="mailto:milo4kamoya@gmail.com">milo4kamoya@gmail.com</a></p>
+    </footer>
+  </body>
+</html>
