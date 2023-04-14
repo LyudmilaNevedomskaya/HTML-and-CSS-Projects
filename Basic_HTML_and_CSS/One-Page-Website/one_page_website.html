@@ -57,8 +57,72 @@
       </section>
 
       <section id="products">
+        <!-- LIGHTBOX -->
+        <h2>Sweet Cream Cakes</h2>
+        <div class="row">
+          <div class="column">
+            <img src="./images/cream-cake-1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="./images/cream-cake-2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="./images/cream-cake-3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="./images/fruit-pie-2.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+        </div>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+        
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="./images/cream-cake-1.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="./images/cream-cake-2.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="./images/cream-cake-3.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="./images/fruit-pie-2.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        
+        
+            <div class="column">
+              <img class="demo cursor" src="./images/cream-cake-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Honey Heaven">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./images/cream-cake-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Summer Snow">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./images/cream-cake-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Chocolate Ocean">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./images/fruit-pie-2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Apples Fall">
+            </div>
+          </div>
+        </div>
+
         <!-- Sweet Cream Cakes -->
-        <div class="margin">
+        <!-- <div class="margin">
           <h2>Sweet Cream Cakes</h2>
           <div class="img-container">
             <div>
@@ -83,11 +147,13 @@
               />
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- End Sweet Cream Cakes -->
 
+
         <!-- Fruit Pies -->
-        <div class="margin">
+        
+        <!-- <div class="margin">
           <h2>Fruit Pies</h2>
           <div class="img-container">
             <div>
@@ -100,11 +166,11 @@
               <img src="./images/fruit-pie-3.jpg" alt="Fruit pie" width="250" />
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- End Fruit Pies -->
 
         <!-- Small Cakes -->
-        <div class="margin">
+        <!-- <div class="margin">
           <h2>Small cakes</h2>
           <div class="img-container">
             <div>
@@ -117,11 +183,11 @@
               <img src="./images/cake-sm-3.jpg" alt="Small cake" width="250" />
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- End Small Cakes -->
 
         <!-- Macarons -->
-        <div class="margin">
+        <!-- <div class="margin">
           <h2>Macarons</h2>
           <div class="img-container">
             <div>
@@ -134,11 +200,11 @@
               <img src="./images/macarons-3.jpg" alt="Macarons" width="250" />
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- End Macarons -->
 
         <!-- Donuts -->
-        <div class="margin">
+        <!-- <div class="margin">
           <h2>Donuts</h2>
           <div class="img-container">
             <div>
@@ -151,7 +217,7 @@
               <img src="./images/donuts-3.jpg" alt="Donuts" width="250" />
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- End Donuts -->
       </section>
 
@@ -179,5 +245,7 @@
       <p>Sweet Life &copy; 2023</p>
       <p>made by Mila with ❤️</p>
     </footer>
+
+    <script src="./JS/one_page_website.js"></script>
   </body>
 </html>
