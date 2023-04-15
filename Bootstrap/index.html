@@ -144,6 +144,38 @@
     </div>
     <!-- END ABOUT SECTION -->
 
+    <!--  READ ABOUT J.K.ROWLING collapse -->
+    <div class="container">
+      <p>
+        <button
+          class="btn btn-lg btn-warning"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Know more about J.K.Rowling
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          J.K. Rowling, in full Joanne Kathleen Rowling, pen name of Joanne
+          Rowling, (born July 31, 1965, Yate, near Bristol, England), British
+          author, creator of the popular and critically acclaimed Harry Potter
+          series, about a young sorcerer in training. After graduating from the
+          University of Exeter in 1986, Rowling began working for Amnesty
+          International in London, where she started to write the Harry Potter
+          adventures. In the early 1990s she traveled to Portugal to teach
+          English as a foreign language, but, after a brief marriage and the
+          birth of her daughter, she returned to the United Kingdom, settling in
+          Edinburgh. Living on public assistance between stints as a French
+          teacher, she continued to write. Rowling made her first foray into adult fiction with The Casual Vacancy (2012; TV miniseries 2015), a contemporary social satire set in a small English town. In 2013 it was revealed that the author had penned the crime novel The Cuckoo's Calling, using the pseudonym Robert Galbraith. The Silkworm—the second book in the series, which centred on the detective Cormoran Strike, a down-on-his-luck war veteran—was released in 2014. Later installments included Career of Evil (2015), Lethal White (2018), Troubled Blood (2020), and The Ink Black Heart (2022). A television series based on the books premiered in the United Kingdom in 2017 and in the United States the following year. In May 2020, during the COVID-19 pandemic, Rowling began serializing a new children's book, The Ickabog, for free online; it was published in November. She described the fairy tale, which was unrelated to Harry Potter, as an exploration of “truth and the abuse of power.” She later published The Christmas Pig (2021), about a boy who loses his favourite toy and then embarks on a fantastical quest to find it. Rowling was appointed Officer of the Order of the British Empire (OBE) in 2001. In 2009 she was named a chevalier of the French Legion of Honour. 
+        </div>
+      </div>
+    </div>
+    <!--  END READ ABOUT J.K.ROWLING collapse -->
+
     <!-- QUOTE SECTION -->
     <div class="container my-5 p-5">
       <blockquote class="blockquote text-right">
@@ -363,6 +395,33 @@
       </div>
       <!-- END CARDS -->
 
+      <!-- BOOK DEALS CONTAINER -->
+      <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+        <div class="container">
+          <h1
+            class="display-4 hidden-sm-down"
+            style="
+              color: #ffffff;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-weight: 900;
+              text-transform: uppercase;
+            "
+          >
+            Book Deals
+          </h1>
+          <p class="lead">Check out our monthly deals...</p>
+          <button
+            type="button"
+            class="btn btn-outline-warning"
+            data-toggle="modal"
+            data-target="#register"
+          >
+            See our monthly book deals!
+          </button>
+        </div>
+      </div>
+      <!-- BOOK DEALS CONTAINER -->
+
       <!-- NEWSLETTER SIGN Up -->
       <form class="my-4 py-4 text-center">
         <h1 id="subscribe" class="text-info my-5">
@@ -376,7 +435,17 @@
             placeholder="Enter email"
           />
         </div>
-        <button type="submit" class="btn btn-warning btn-block">Submit</button>
+        <!-- <button type="submit" class="btn btn-warning btn-block">Submit</button> -->
+        <button
+          type="button"
+          class="btn btn-warning btn-block popover-dismiss"
+          data-container="body"
+          data-toggle="popover"
+          data-placement="top"
+          data-content="Submit your email to receive great books updates!!!"
+        >
+          Submit
+        </button>
       </form>
       <!-- END NEWSLETTER SIGN Up -->
     </div>
@@ -386,6 +455,89 @@
       <img class="img-fluid" src="./images/books.jpg" alt="books" />
     </div>
     <!-- END BOOKS BANNER -->
+
+    <!-- FORM MODAL -->
+    <div
+      class="modal fade"
+      id="register"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Register to receive our Book deals!!!
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Enter your First Name..."
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Enter your Last Name..."
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email..."
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCity"
+                    placeholder="Your City..."
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END FORM MODAL -->
 
     <!-- FOOTER -->
     <div class="container my-3">
@@ -428,5 +580,6 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script src="./JS/index.js"></script>
   </body>
 </html>
