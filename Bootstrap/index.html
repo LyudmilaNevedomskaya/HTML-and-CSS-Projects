@@ -7,7 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <!--  Style Sheet  -->
+    <link rel="stylesheet" href="./CSS/style.css">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -31,11 +32,6 @@
     <title>Harry Potter's World</title>
     <link rel="shortcut icon" type="image/png" href="./images/book.png" />
 
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -133,7 +129,7 @@
             film series by Warner Bros. Pictures.
           </p>
         </div>
-        <div class="col-md d-flex align-items-center">
+        <div class="col-md d-flex align-items-center writer">
           <img
             class="img-fluid"
             src="./images/j-k-rowling.jpg"
@@ -195,7 +191,7 @@
     <!-- FIRST SECTION -->
     <div class="container pb-5">
       <div class="row">
-        <div class="col-sm">
+        <div class="col-sm stone-book">
           <img
             class="img-fluid"
             src="./images/book1.jfif"
@@ -538,6 +534,25 @@
       </div>
     </div>
     <!-- END FORM MODAL -->
+
+    <!-- POPUP FORM -->
+    <button class="open-button" onclick="openForm()">Open Login Form</button>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    <!-- END POPUP FORM -->
 
     <!-- FOOTER -->
     <div class="container my-3">

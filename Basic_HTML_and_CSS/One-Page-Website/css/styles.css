@@ -7,6 +7,16 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
+
+/* FADE Effect */
+body {
+  opacity: 1;
+  transition: 1s opacity;
+}
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
 /* HEADER */
 nav {
   position: fixed;
@@ -38,6 +48,7 @@ nav a:hover {
 h1 {
   font-family: 'Dancing Script', cursive;
   font-size: 96px;
+  font-size: 10vw; /*vw unit*/
   color: #C04A82;
   color: #E11299;
 }
@@ -270,4 +281,30 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Automatic slideshow */
+#slideshow { 
+  margin: 50px auto; 
+  position: relative; 
+  width: 240px; 
+  height: 240px; 
+  padding: 10px; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px; 
+}
+#slideshow div img {
+  width: 100%;
+}
+.comment {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 20px;
 }
